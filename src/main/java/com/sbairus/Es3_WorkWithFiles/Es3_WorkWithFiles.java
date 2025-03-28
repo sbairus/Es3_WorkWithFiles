@@ -44,8 +44,8 @@ public class Es3_WorkWithFiles {
         int i = 0;
         String contfile[] = {};
         try {
-            List<String> lines = Files.readAllLines(Paths.get(filename));
-            contfile = new String[lines.size()];
+            List<String> lines = Files.readAllLines(Paths.get(filename)); //Arraylist
+            contfile = new String[lines.size()]; //Assegnazione dinamica della dimensione dell'array
             for (String lin : lines) {
                 contfile[i++] = lin;
             }
